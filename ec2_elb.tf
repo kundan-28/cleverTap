@@ -47,30 +47,6 @@ resource "aws_launch_configuration" "wordpress" {
               systemctl restart httpd
               cd /tmp/
               rm -rf /tmp/finance
-              # yum update -y
-              # yum install -y httpd \
-              #                ghostscript \
-              #                php \
-              #                php-bcmath \
-              #                php-curl \
-              #                php-gd \
-              #                php-intl \
-              #                php-json \
-              #                php-mbstring \
-              #                php-mysql \
-              #                php-xml \
-              #                php-zip \
-              #                mariadb-server
-
-              # systemctl start httpd
-              # systemctl enable httpd
-              # systemctl start mariadb
-              # systemctl enable mariadb
-
-              # mkdir -p /srv/www
-              # chown apache: /srv/www
-              # sudo -u apache curl -o /tmp/latest.tar.gz https://wordpress.org/latest.tar.gz
-              # sudo -u apache tar -zxvf /tmp/latest.tar.gz -C /srv/www --strip-components=1
               EOF
 }
 
